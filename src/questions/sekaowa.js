@@ -1,4 +1,4 @@
-const sekaowaquestions = [
+const sekaowaQuestions = [
   {
     question: '「RPG」の歌詞に出てくる色はどれ？',
     options: ['赤', '青', '緑', '黄色'],

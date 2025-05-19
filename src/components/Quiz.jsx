@@ -23,7 +23,7 @@ export default function Quiz({ questions, genre }) {
 
   return (
     <div>
-      <div className="header">QuizApp</div>
+      <div className="header"><a href="./GenreSelect.jsx">QuizApp</a></div>
 
       <div className="title">
         <h2>

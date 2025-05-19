@@ -5,12 +5,12 @@ export default function GenreSelect({ onSelect }) {
     { id: 'english', label: '英単語', color: '#e74c3c' },
     { id: 'korean', label: '韓国語', color: '#2980b9' },
     { id: 'kpop', label: 'K-POP', color: '#f39c12' },
-    { id: 'SEKAI NO OWARI', label: 'セカオワ', color: '#27ae60' },
+    { id: 'sekaowa', label: 'セカオワ', color: '#27ae60' },
   ];
 
   return (
     <div className="genre-select">
-    <div className="header">QuizApp</div>
+    <div className="header"><a href="#">QuizApp</a></div>
     <div className="title">
         <h2>ジャンルを選んでください</h2>
     </div>
