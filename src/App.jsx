@@ -38,6 +38,10 @@ export default function App() {
   return (
     <div>
       <div className="header">QuizApp</div>
+      <div className="title">
+        <h2>英単語クイズ</h2>
+        <p>3択の中から英単語の意味を選びましょう。</p>
+      </div>
 
       {showResult ? (
         <div className="result">
@@ -46,6 +50,7 @@ export default function App() {
         </div>
       ) : (
         <div className="question-block">
+          <div className="number">Question {currentQuestion + 1} of {questions.length}</div>
           <h2>{q.question}</h2>
           {q.options.map((option, index) => (
             <button key={index} onClick={() => handleAnswer(option)}>

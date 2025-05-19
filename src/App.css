@@ -68,3 +68,11 @@ body, html {
   text-align: center;
 }
 
+.title{
+  text-align: center;
+  color: #213547;
+}
+
+.title h2{
+  font-size:bold;
+}
