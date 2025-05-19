@@ -1,23 +1,25 @@
-// src/App.jsx
-import { useState } from 'react';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 const questions = [
   {
     question: 'What is the capital of Japan?',
     options: ['Tokyo', 'Kyoto', 'Nagoya'],
-    answer: 'Paris',
+    answer: 'Tokyo',
   },
   {
-    question: 'What is 2 + 2?',
-    options: ['3', '4', '5'],
-    answer: '4',
+    question: 'Which one is a JavaScript framework?',
+    options: ['Laravel', 'React', 'Django'],
+    answer: 'React',
   },
 ];
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
 
   function handleAnswer(option) {
     if (option === questions[currentQuestion].answer) {
@@ -32,7 +34,12 @@ export default function App() {
   }
 
   if (showResult) {
-    return <h2>You scored {score} out of {questions.length}!</h2>;
+    return (
+      <div>
+        <h2>Quiz finished!</h2>
+        <p>You scored {score} out of {questions.length}!</p>
+      </div>
+    );
   }
 
   const q = questions[currentQuestion];
