@@ -33,15 +33,17 @@ export default function Quiz({ questions, genre }) {
             ? '韓国語クイズ'
             : genre === 'kpop'
             ? 'K-POPクイズ'
+            : genre === 'セカオワ'
+            ? 'SEKAI NO OWARIクイズ'
             : 'クイズ'}
         </h2>
-        <p>正しい意味や答えを選びましょう。</p>
+        <p>正しい答えを選びましょう。</p>
       </div>
 
       {showResult ? (
         <div className="result">
-          <h2>Quiz finished!</h2>
-          <p>You scored {score} out of {questions.length}!</p>
+          <h2>クイズが終わりました！</h2>
+          <p>あなたの正解数は {score}問/全{questions.length}問</p>
         </div>
       ) : (
         <div className="question-block">

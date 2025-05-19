@@ -1,11 +1,30 @@
+import '../App.css'; 
+
 export default function GenreSelect({ onSelect }) {
+  const genres = [
+    { id: 'english', label: '英単語', color: '#e74c3c' },
+    { id: 'korean', label: '韓国語', color: '#2980b9' },
+    { id: 'kpop', label: 'K-POP', color: '#f39c12' },
+    { id: 'SEKAI NO OWARI', label: 'セカオワ', color: '#27ae60' },
+  ];
+
   return (
     <div className="genre-select">
-      <h2>ジャンルを選んでください</h2>
-      <div className="genre-buttons">
-        <button onClick={() => onSelect('english')}>英単語</button>
-        <button onClick={() => onSelect('english')}>英単語</button>
-        <button onClick={() => onSelect('english')}>英単語</button>
+    <div className="header">QuizApp</div>
+    <div className="title">
+        <h2>ジャンルを選んでください</h2>
+    </div>
+    <div className="genre-options">
+        {genres.map((genre) => (
+          <div
+            key={genre.id}
+            className="genre-card"
+            style={{ backgroundColor: genre.color }}
+            onClick={() => onSelect(genre.id)}
+          >
+            <div className="genre-label">{genre.label}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

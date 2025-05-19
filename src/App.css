@@ -41,7 +41,6 @@
   color: #888;
 }
 
-/* App.css に書いてね */
 
 body, html {
   margin: 0;
@@ -170,4 +169,36 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.genre-select {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.genre-options {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.genre-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.genre-card:hover {
+  transform: translateY(-5px);
 }

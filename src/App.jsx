@@ -2,6 +2,10 @@ import { useState } from 'react';
 import GenreSelect from './components/GenreSelect'; 
 import Quiz from './components/Quiz';              
 import { englishQuestions } from './questions/english';
+import { koreanQuestions } from './questions/korean';
+import { kpopQuestions } from './questions/kpop';
+import { sekaowaQuestions } from './questions/sekaowa';
+
 
 export default function App() {
   const [genre, setGenre] = useState(null); 
@@ -18,6 +22,9 @@ export default function App() {
         break;
       case 'kpop':
         setQuestions(kpopQuestions);
+        break;
+      case 'sekaowa':
+        setQuestions(sekaowaQuestions);
         break;
       default:
         setQuestions([]);
