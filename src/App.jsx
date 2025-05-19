@@ -33,25 +33,27 @@ export default function App() {
     }
   }
 
-  if (showResult) {
-    return (
-      <div>
-        <h2>Quiz finished!</h2>
-        <p>You scored {score} out of {questions.length}!</p>
-      </div>
-    );
-  }
-
   const q = questions[currentQuestion];
 
   return (
     <div>
-      <h2>{q.question}</h2>
-      {q.options.map((option, index) => (
-        <button key={index} onClick={() => handleAnswer(option)}>
-          {option}
-        </button>
-      ))}
+      <div className="header">QuizApp</div>
+
+      {showResult ? (
+        <div className="result">
+          <h2>Quiz finished!</h2>
+          <p>You scored {score} out of {questions.length}!</p>
+        </div>
+      ) : (
+        <div className="question-block">
+          <h2>{q.question}</h2>
+          {q.options.map((option, index) => (
+            <button key={index} onClick={() => handleAnswer(option)}>
+              {option}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

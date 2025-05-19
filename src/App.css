@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+/* ヘッダー：常に画面上部に固定 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2ecc71; /* グリーン系 */
+  color: white;
+  padding: 16px;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* 全体の余白を調整（ヘッダーの分だけ下げる） */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* クイズ本体 */
+.question-block {
+  margin-top: 80px; /* ヘッダーの高さ + 余白 */
+  text-align: center;
+}
+
