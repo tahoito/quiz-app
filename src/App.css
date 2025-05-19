@@ -132,6 +132,10 @@ body, html {
   margin-top:25px;
 }
 
+button.selected {
+  background-color: #d9d8d8;
+}
+
 
 .choices{
   display: flex;

@@ -7,11 +7,14 @@ export default function Quiz({ questions, genre }) {
   const [showResult, setShowResult] = useState(false);
   const [showCorrectModal, setShowCorrectModal] = useState(false);
   const [isCorrect, setIsCorrect] = useState(null);
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
+
 
   const q = questions[currentQuestion];
 
 
-  function handleAnswer(option) {
+  function handleAnswer(option,index) {
+    setSelectedOptionIndex(index); 
     const correct = option === q.answer;
     setIsCorrect(correct);
     setShowCorrectModal(true);
@@ -22,6 +25,7 @@ export default function Quiz({ questions, genre }) {
 
     setTimeout(() => {
         setShowCorrectModal(false);
+        setSelectedOptionIndex(null);
         goToNextQuestion();
     }, 1000);
     }
@@ -97,7 +101,8 @@ export default function Quiz({ questions, genre }) {
             <div className="choices">
               <div className="choices-box">
                 {q.options.map((option, index) => (
-                  <button key={index} onClick={() => handleAnswer(option)}>
+                  <button key={index} onClick={() => handleAnswer(option,index)}
+                  className={selectedOptionIndex === index ? 'selected' : ''}>
                     {option}
                   </button>
                 ))}
