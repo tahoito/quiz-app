@@ -202,3 +202,49 @@ button:focus-visible {
 .genre-card:hover {
   transform: translateY(-5px);
 }
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  font-size: 24px;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: pop 0.4s ease;
+}
+
+.return-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #1f6396;
+}
+
+
+@keyframes pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

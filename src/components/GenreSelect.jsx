@@ -6,6 +6,7 @@ export default function GenreSelect({ onSelect }) {
     { id: 'korean', label: '韓国語', color: '#2980b9' },
     { id: 'kpop', label: 'K-POP', color: '#f39c12' },
     { id: 'sekaowa', label: 'セカオワ', color: '#27ae60' },
+    { id: 'programming', label: 'プログラミング', color: '#8e44ad' },
   ];
 
   return (

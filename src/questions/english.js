@@ -6,32 +6,32 @@ export const englishQuestions = [
   },
   {
     question: 'What is the meaning of "benefit"?',
-    options: ['利益', '罰', '保証', '手段'],
+    options: ['罰', '保証', '手段', '利益'],
     answer: '利益',
   },
   {
     question: 'What is the meaning of "challenge"?',
-    options: ['挑戦', '選択', '反省', '決定'],
+    options: ['選択', '挑戦', '反省', '決定'],
     answer: '挑戦',
   },
   {
     question: 'What is the meaning of "depend"?',
-    options: ['頼る', '避ける', '繰り返す', '超える'],
+    options: [ '避ける', '繰り返す', '頼る', '超える'],
     answer: '頼る',
   },
   {
     question: 'What is the meaning of "environment"?',
-    options: ['環境', '装置', '制度', '機会'],
+    options: ['装置', '環境', '制度', '機会'],
     answer: '環境',
   },
   {
     question: 'What is the meaning of "feature"?',
-    options: ['特徴', '結果', '物語', '課題'],
+    options: ['物語', '結果', '特徴', '課題'],
     answer: '特徴',
   },
   {
     question: 'What is the meaning of "global"?',
-    options: ['世界的な', '地域の', '伝統的な', '個人的な'],
+    options: ['地域の', '伝統的な', '個人的な' , '世界的な'],
     answer: '世界的な',
   },
   {
@@ -41,7 +41,7 @@ export const englishQuestions = [
   },
   {
     question: 'What is the meaning of "material"?',
-    options: ['材料', '速度', '地位', '目的'],
+    options: ['材料', '速度','目的', '地位', ],
     answer: '材料',
   },
   {

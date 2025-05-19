@@ -5,6 +5,7 @@ import { englishQuestions } from './questions/english';
 import { koreanQuestions } from './questions/korean';
 import { kpopQuestions } from './questions/kpop';
 import { sekaowaQuestions } from './questions/sekaowa';
+import { programmingQuestions } from './questions/programming';
 
 
 export default function App() {
@@ -25,6 +26,9 @@ export default function App() {
         break;
       case 'sekaowa':
         setQuestions(sekaowaQuestions);
+        break;
+      case 'programming':
+        setQuestions(programmingQuestions);
         break;
       default:
         setQuestions([]);
