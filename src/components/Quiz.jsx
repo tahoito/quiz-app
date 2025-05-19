@@ -38,7 +38,7 @@ export default function Quiz({ questions, genre }) {
 
     return (
     <div>
-      <div className="header"><a href="./GenreSelect.jsx">QuizApp</a></div>
+      <div className="header"><a href="/">QuizApp</a></div>
 
         {!showResult && (
         <div className="title">
@@ -77,7 +77,7 @@ export default function Quiz({ questions, genre }) {
             <div className="modal-content">
             <h2>クイズが終わりました！</h2>
             <p>あなたの正解数は {score}問 / 全{questions.length}問</p>
-            <a href="./GenreSelect.jsx" className="return-button">ジャンル選択に戻る</a>
+            <a href="/" className="return-button">ジャンル選択に戻る</a>
             </div>
         </div>
         ) : (

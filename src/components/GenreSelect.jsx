@@ -11,7 +11,7 @@ export default function GenreSelect({ onSelect }) {
 
   return (
     <div className="genre-select">
-    <div className="header"><a href="#">QuizApp</a></div>
+    <div className="header"><a href="/">QuizApp</a></div>
     <div className="title">
         <h2>ジャンルを選んでください</h2>
     </div>
