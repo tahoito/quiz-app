@@ -50,13 +50,21 @@ export default function App() {
         </div>
       ) : (
         <div className="question-block">
-          <div className="number">Question {currentQuestion + 1} of {questions.length}</div>
-          <h2>{q.question}</h2>
-          {q.options.map((option, index) => (
+          <div className="question-wrapper">
+            <div className="number">第{currentQuestion + 1}問/全{questions.length}問</div>
+            <div className="question-box">
+              <p>問題</p>
+              <div className="question-text">{q.question}</div>
+            </div>
+          </div>
+
+          <div className="choices">
+            {q.options.map((option, index) => (
             <button key={index} onClick={() => handleAnswer(option)}>
               {option}
             </button>
-          ))}
+            ))}
+          </div>
         </div>
       )}
     </div>
