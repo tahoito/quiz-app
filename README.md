@@ -1,12 +1,40 @@
-# React + Vite
+# Quiz-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive quiz application built with React.js.  
+Choose a category, answer questions, and test your knowledge!
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multiple quiz categories (ex. English,korean, K-pop, SEKAI NO OWARI)
+- Instant feedback with correct/incorrect modals
+- Responsive design for mobile and desktop
+- Easy to update or add more questions
 
-## Expanding the ESLint configuration
+## 🖥️ Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Try it live 👉 [https://quiz-app-umber-xi.vercel.app](https://quiz-app-umber-xi.vercel.app)
+
+
+## 🛠️ Tech Stack
+
+- React.js
+- vite
+- HTML / CSS
+- JavaScript
+
+
+## ✨ Future Plans
+
+- Add more genres 
+- Add user score history
+- Add timer for quiz questions
+
+## 📦 Installation (for developers)
+
+```bash
+git clone https://github.com/tahoito/quiz-app/
+cd quiz-app
+npm install
+npm start
+
+
