@@ -1,40 +1,36 @@
-# Quiz-App
+# Quiz App
 
-A fun and interactive quiz application built with React.js.  
+A fun and interactive quiz application built with React.js and Vite.  
 Choose a category, answer questions, and test your knowledge!
 
 ## 🚀 Features
 
-- Multiple quiz categories (ex. English,korean, K-pop, SEKAI NO OWARI)
+- Multiple quiz categories (e.g. English, Korean, K-pop, SEKAI NO OWARI)
 - Instant feedback with correct/incorrect modals
 - Responsive design for mobile and desktop
 - Easy to update or add more questions
 
 ## 🖥️ Demo
 
-Try it live 👉 [https://quiz-app-umber-xi.vercel.app](https://quiz-app-umber-xi.vercel.app)
-
+👉 [Try it live](https://quiz-app-umber-xi.vercel.app)
 
 ## 🛠️ Tech Stack
 
 - React.js
-- vite
-- HTML / CSS
+- Vite
 - JavaScript
-
+- HTML / CSS
 
 ## ✨ Future Plans
 
-- Add more genres 
+- Add more genres
 - Add user score history
-- Add timer for quiz questions
+- Add a timer for each quiz question
 
 ## 📦 Installation (for developers)
 
 ```bash
-git clone https://github.com/tahoito/quiz-app/
+git clone https://github.com/tahoito/quiz-app
 cd quiz-app
 npm install
-npm start
-
-
+npm run dev
