@@ -6,7 +6,9 @@ import { koreanQuestions } from './questions/korean';
 import { kpopQuestions } from './questions/kpop';
 import { sekaowaQuestions } from './questions/sekaowa';
 import { programmingQuestions } from './questions/programming';
-
+import { proverbsQuestions } from './questions/proverbs';
+import { prefectureQuestions } from './questions/prefecture';
+import { txtQuestions } from './questions/txt';
 
 export default function App() {
   const [genre, setGenre] = useState(null); 
@@ -27,8 +29,17 @@ export default function App() {
       case 'sekaowa':
         setQuestions(sekaowaQuestions);
         break;
+      case 'txt':
+        setQuestions(txtQuestions);
+        break;
       case 'programming':
         setQuestions(programmingQuestions);
+        break;
+      case 'proverbs':
+        setQuestions(proverbsQuestions);
+        break;
+      case 'prefecture':
+        setQuestions(prefectureQuestions);
         break;
       default:
         setQuestions([]);

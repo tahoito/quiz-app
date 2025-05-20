@@ -176,37 +176,32 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
-.genre-select {
-  text-align: center;
-  margin-top: 40px;
-}
-
 .genre-options {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4列レイアウト */
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
 }
 
 .genre-card {
-  width: 120px;
-  height: 120px;
+  padding: 30px;
   border-radius: 12px;
   color: white;
-  font-weight: bold;
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: bold;
+  text-align: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
 }
 
 .genre-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+}
+
+.genre-label {
+  white-space: nowrap;
 }
 
 

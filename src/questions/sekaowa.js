@@ -5,29 +5,49 @@ const sekaowaQuestions = [
     answer: '青',
   },
   {
-    question: '「Dragon Night」で戦っていたのは誰？',
-    options: ['魔法使いと騎士', '勇者とドラゴン', '人間とモンスター', 'ドラゴンと人間'],
-    answer: 'ドラゴンと人間',
-  },
-  {
-    question: '「炎と森のカーニバル」で登場する乗り物は？',
-    options: ['汽車', '観覧車', 'メリーゴーランド', '気球'],
-    answer: 'メリーゴーランド',
+    question: '「さあ 冒険を始めよう」という歌詞が登場する楽曲は？',
+    options: ['Dragon Night', 'RPG', 'サザンカ', 'Habit'],
+    answer: 'RPG',
   },
   {
     question: 'SEKAI NO OWARIのデビューアルバムは？',
-    options: ['Tree', 'Eye', 'EARTH', 'Lip'],
+    options: ['EARTH', 'Tree', 'Lip', 'Eye'],
     answer: 'EARTH',
   },
   {
-    question: '「Starlight Parade」で「光の海」と表現されているのは何？',
-    options: ['夜空', '街の灯り', '星空', '夢'],
-    answer: '星空',
+    question: 'アルバム「Tree」に収録されているリード曲は？',
+    options: ['Dragon Night', 'RPG', 'Starlight Parade', '幻の命'],
+    answer: 'Dragon Night',
   },
   {
-    question: 'Fukaseが英語で歌っている楽曲は？',
-    options: ['Dragon Night', 'Hey Ho', 'SOS', 'Habit'],
-    answer: 'Dragon Night',
+    question: 'アルバム「Eye」はどんなテーマ？',
+    options: ['ダークで攻撃的', '恋愛と成長', '平和と友情', '夢と冒険'],
+    answer: 'ダークで攻撃的',
+  },
+  {
+    question: '初めてオリコン１位をとったシングルは？',
+    options: ['サザンカ', 'スノーマジックファンタジー', 'ムーンライトステーション', '炎と森のカーニバル'],
+    answer: 'スノーマジックファンタジー',
+  },
+  {
+    question: '「Habit」のMVでメンバーが演じていた職業は？',
+    options: ['教師', '警察官', '医者', 'バス運転手'],
+    answer: '教師',
+  },
+  {
+    question: '「炎と森のカーニバル」はどんな世界観を表現している？',
+    options: ['サーカス的ファンタジー', '戦場', '現実の都市', '未来の世界'],
+    answer: 'サーカス的ファンタジー',
+  },
+  {
+    question: '「サザンカ」はどんなテーマの応援ソング？',
+    options: ['恋愛', '反抗', '友情と努力', '孤独'],
+    answer: '友情と努力',
+  },
+  {
+    question: '「スターライトパレード」の歌詞に出てくる「光の海」とは何？',
+    options: ['星空', 'ライブの景色', '夢の中', '夜の海'],
+    answer: 'ライブの景色',
   },
   {
     question: 'SEKAI NO OWARIのバンド名の由来は？',
@@ -35,92 +55,50 @@ const sekaowaQuestions = [
     answer: '自分たちの世界が一度終わったから',
   },
   {
+    question: 'ギターを担当しているメンバーは？',
+    options: ['Fukase', 'Saori', 'Nakajin', 'DJ LOVE'],
+    answer: 'Nakajin',
+  },
+  {
+    question: '2017年に発売されたSaoriの初の小説の名前は？',
+    options: ['ふたご', 'ふたり', 'ふたつ', 'ふたば'],
+    answer: 'ふたご',
+  },
+  {
     question: 'Fukaseの本名は？',
-    options: ['深瀬智', '深瀬太郎', '深瀬慧', '深瀬潤'],
+    options: ['深瀬太郎', '深瀬慧',  '深瀬智', '深瀬潤'],
     answer: '深瀬慧',
   },
   {
-    question: 'SEKAI NO OWARIでギターを担当しているのは？',
-    options: ['Fukase', 'Nakajin', 'DJ LOVE', 'Saori'],
-    answer: 'Nakajin',
-  },
-
-  {
-    question: '「炎と森のカーニバル」の舞台はどこ？',
-    options: ['空の王国', '森の遊園地', '星の世界', '砂漠の町'],
-    answer: '森の遊園地',
+    question: 'SEKAI NO OWARIが設立したクリエイティブチームの名前は？',
+    options: ['TOKYO FANTASY', 'End of the World', 'Team SEKAI', 'Fantasy Tokyo'],
+    answer: 'TOKYO FANTASY',
   },
   {
-    question: '「サザンカ」はどんなテーマの楽曲？',
-    options: ['別れ', '友情と努力', '反抗', '恋愛'],
-    answer: '友情と努力',
+    question: '「幻の命」で描かれているテーマは？',
+    options: [ '家族愛', '恋愛', '自由への憧れ', '死と再生'],
+    answer: '死と再生',
   },
   {
-    question: '「Habit」のMVでメンバーが演じていたのは？',
-    options: ['保育士', '学校の先生', 'ダンサー', '動物飼育員'],
-    answer: '学校の先生',
-  },
-  {
-    question: '「RPG」の歌詞の中で旅立つのは誰？',
-    options: ['主人公', '友達', 'モンスター', '勇者'],
-    answer: '主人公',
-  },
-  {
-    question: 'SEKAI NO OWARIの曲で、英語詞がメインの楽曲は？',
-    options: ['SOS', 'Dragon Night', 'Rain', 'Love the warz'],
-    answer: 'Dragon Night',
-  },
-  {
-    question: 'SEKAI NO OWARIが初めてワンマンライブを開催した場所は？',
-    options: ['Zepp Tokyo', '新宿LOFT', '渋谷O-EAST', 'さいたまスーパーアリーナ'],
-    answer: '渋谷O-EAST',
-  },
-  {
-    question: '「さあ冒険を始めよう」この歌詞が登場する曲は？',
-    options: ['RPG', 'Dragon Night', 'サザンカ', 'Habit'],
-    answer: 'RPG',
-  },
-  {
-    question: '「戦争を愛せるかい？」という歌詞が登場するのは？',
-    options: ['SOS', 'Love the warz', 'ANTI-HERO', 'Dragon Night'],
-    answer: 'Love the warz',
-  },
-  {
-    question: '「学校のルールも社会のルールも僕には関係なかった」が登場するのは？',
-    options: ['Habit', 'RAIN', 'スノーマジックファンタジー', '幻の命'],
-    answer: 'Habit',
-  },
-  {
-    question: '「We are the colors in the dark」が登場する楽曲は？',
-    options: ['Dragon Night', 'スターライトパレード', 'LOVE SONG', 'RAIN'],
-    answer: 'Dragon Night',
-  },
-  {
-    question: '「光の海に僕ら浮かべて」という歌詞が登場するのは？',
-    options: ['RAIN', 'サザンカ', 'スターライトパレード', '眠り姫'],
+    question: 'アルバム「ENTERTAINMENT」に収録されている人気曲は？',
+    options: ['スターライトパレード', 'RPG', '幻の命', '眠り姫'],
     answer: 'スターライトパレード',
   },
   {
-    question: '「サザンカ」は何のイベントの応援ソング？',
-    options: ['高校サッカー', 'オリンピック', 'パラリンピック', '平昌冬季五輪'],
-    answer: '平昌冬季五輪',
+    question: '「Dragon Night」が使われたCMやタイアップは？',
+    options: [ '世界ふしぎ発見', 'auのCM','コカ・コーラCM', 'NHK紅白テーマ'],
+    answer: 'auのCM',
   },
   {
-    question: '「炎と森のカーニバル」はどんな演出が特徴？',
-    options: ['レーザーショー', 'サーカスのような世界観', 'ドローン演出', 'ライブ中の即興劇'],
-    answer: 'サーカスのような世界観',
+    question: 'アルバム「Tree」の発売年は？',
+    options: ['2013年', '2014年', '2015年', '2016年'],
+    answer: '2015年',
   },
   {
-    question: '「スターライトパレード」のライブ演出で象徴的なのは？',
-    options: ['銀テープ', '花火', 'バルーン', '光の演出'],
-    answer: '光の演出',
+    question: '「RAIN」はどの映画の主題歌？',
+    options: ['メアリと魔女の花', '君の名は。', '天気の子', '思い出のマーニー'],
+    answer: 'メアリと魔女の花',
   },
-  {
-    question: 'SEKAI NO OWARIが設立したクリエイティブチームの名前は？',
-    options: ['End of the World', 'TOKYO FANTASY', 'Team SEKAI', 'Tokyo Lab'],
-    answer: 'TOKYO FANTASY',
-  }
 ];
 
-
-export { sekaowaQuestions };
+export {sekaowaQuestions};
