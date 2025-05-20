@@ -176,33 +176,32 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
 .genre-options {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4列レイアウト */
-  gap: 20px;
+  gap: 16px;
+  padding: 24px;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .genre-card {
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .genre-card:hover {
   transform: scale(1.05);
 }
 
-.genre-label {
-  white-space: nowrap;
-}
 
 
 .modal {
