@@ -8,6 +8,7 @@ export default function Quiz({ questions, genre }) {
   const [showCorrectModal, setShowCorrectModal] = useState(false);
   const [isCorrect, setIsCorrect] = useState(null);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
+  const [wrongAnswers, setWrongAnswers] = useState([]);
 
 
   const q = questions[currentQuestion];
@@ -21,6 +22,8 @@ export default function Quiz({ questions, genre }) {
 
     if (correct) {
         setScore(score + 1);
+    }else{
+      setWrongAnswers((prev) => [...prev, q]);
     }
 
     setTimeout(() => {
@@ -63,28 +66,32 @@ export default function Quiz({ questions, genre }) {
         </div>
         )}
 
-        {showCorrectModal && (
-            <div className="modal">
-                <div className="modal-content">
-                <h2>{isCorrect ? '正解！' : '不正解…'}</h2>
-                <div style={{ fontSize: '80px', color: isCorrect ? 'red' : 'blue' }}>
-                    {isCorrect ? '◯' : '✕'}
-                </div>
-                </div>
+      {showCorrectModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <h2>{isCorrect ? '正解！' : '不正解…'}</h2>
+            <div style={{ fontSize: '80px', color: isCorrect ? 'red' : 'blue' }}>
+              {isCorrect ? '◯' : '✕'}
             </div>
+
+            {!isCorrect && (
+              <div className="answer">正解は「{q.answer}」です。</div>
             )}
+          </div>
+        </div>
+      )}
 
 
 
       {showResult ? (
         <div className="modal">
-            <div className="modal-content">
+          <div className="modal-content">
             <h2>クイズが終わりました！</h2>
             <p>あなたの正解数は {score}問 / 全{questions.length}問</p>
             <a href="/" className="return-button">ジャンル選択に戻る</a>
-            </div>
+          </div>
         </div>
-        ) : (
+      ) : 
         <div className="question-block">
           <div className="question-wrapper">
             <div className="number">
@@ -110,7 +117,7 @@ export default function Quiz({ questions, genre }) {
             </div>
           </div>
         </div>
-      )}
+      }
     </div>
   );
 }
