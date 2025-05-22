@@ -11,13 +11,13 @@ React.js と Vite を使って作成した、楽しくてインタラクティ�
 ## 🚀 Features / 主な機能
 
 **English**
-- Multiple quiz categories (e.g. English, Korean, K-pop, SEKAI NO OWARI)
+- Multiple quiz categories (e.g. English, Korean, K-pop, TXT, SEKAI NO OWARI, proverbs, prefectures)
 - Instant feedback with correct/incorrect modals
 - Responsive design for mobile and desktop
 - Easy to update or add more questions
 
 **日本語**
-- 英語、韓国語、K-POP、SEKAI NO OWARI など複数のジャンルに対応
+- 英語、韓国語、K-POP、TOMMOROW X TOGETHER、SEKAI NO OWARI、ことわざ、都道府県など複数のジャンルに対応
 - 正解・不正解のポップアップでリアルタイムにフィードバック
 - モバイル・PC対応のレスポンシブデザイン
 - 問題の追加・編集が簡単
